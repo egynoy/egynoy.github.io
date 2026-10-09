@@ -1,4 +1,4 @@
-/* slide: s5-align · indicator 6 · end state — final */
+/* stage 7·5a · slide: s6-render · indicators 2, 7 · end state */
 /* Little Lemon — style.css
    Built in class order. Each block is added on one deck section. */
 
@@ -68,19 +68,6 @@ footer {
 
 /* ===== 4. Box model (§4) ===== */
 
-table, th, td {
-  border: 1px solid #5F7171;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 8px 16px;
-}
-
-th {
-  background-color: #E8EFEF;
-}
-
 main {
   width: 720px;
   padding: 24px;
@@ -92,6 +79,19 @@ main {
   padding: 16px;
   margin-bottom: 24px;
   border: 1px solid #B9CECE;
+  background-color: #E8EFEF;
+}
+
+table, th, td {
+  border: 1px solid #5F7171;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 16px;
+}
+
+th {
   background-color: #E8EFEF;
 }
 
@@ -111,17 +111,17 @@ nav li {
   margin-right: 24px;
 }
 
-nav {
-  text-align: center;
-}
-
 main {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
 }
 
-header, footer {
+header {
+  text-align: center;
+}
+
+nav {
   text-align: center;
 }
 
@@ -133,4 +133,30 @@ header, footer {
 
 .dish h2 {
   margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* ===== 6. States and messages set by script (Week 5) ===== */
+
+.open {
+  color: #064E4F;
+  font-weight: bold;
+}
+
+.closed {
+  color: #B86B00;
+  font-weight: bold;
+}
+
+#seating-note, #requests-count {
+  color: #5F7171;
+  font-size: 14px;
+}
+
+#form-message {
+  color: #B86B00;
+  font-weight: bold;
 }
