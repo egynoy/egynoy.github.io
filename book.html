@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Little Lemon</title>
+    <meta name="description" content="Middle Eastern food in the Main District.">
+    <meta name="author" content="Lazuardi Al-Muzaki">
+
+    <style>
+      body { margin: 0; background-color: #f6ecd9; color: #3b2a1a; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; }
+
+      header { background-color: #7a2e1d; color: #f6ecd9; text-align: center; padding: 20px 10px; border-bottom: 4px solid #c9983a; }
+      #site-name { margin: 0; font-size: 2em; letter-spacing: 2px; }
+      #site-name a { color: #f6ecd9; text-decoration: none; }
+      #tagline { margin: 5px 0 0; font-style: italic; color: #e3c57a; }
+
+      nav { background-color: #3f4a2b; }
+      nav ul { list-style: none; margin: 0; padding: 0; text-align: center; }
+      nav li { display: inline-block; }
+      nav a { display: block; padding: 12px 20px; color: #f6ecd9; text-decoration: none; }
+      nav a:hover, nav a.current { background-color: #c9983a; color: #3b2a1a; }
+
+      main { max-width: 700px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #7a2e1d; }
+      h1 { border-bottom: 2px solid #c9983a; padding-bottom: 5px; }
+
+      .dish { background-color: #fffaf0; border: 1px solid #c9983a; padding: 15px; margin-bottom: 20px; overflow: hidden; }
+      .dish img { float: left; margin-right: 15px; border: 3px solid #c9983a; }
+      .dish h2 { margin-top: 0; }
+      .price { font-weight: bold; color: #3f4a2b; }
+
+      .box { background-color: #fffaf0; border: 1px solid #c9983a; padding: 15px; margin-bottom: 20px; }
+      .box h2 { margin-top: 0; }
+      .box p { margin: 5px 0; }
+      ul.directions { margin: 5px 0; padding-left: 20px; }
+
+      table { width: 100%; border-collapse: collapse; background-color: #fffaf0; }
+      th, td { border: 1px solid #c9983a; padding: 8px 12px; text-align: left; }
+      th { background-color: #3f4a2b; color: #f6ecd9; }
+
+      form { background-color: #fffaf0; border: 1px solid #c9983a; padding: 20px; }
+      label { display: block; margin-top: 12px; font-weight: bold; color: #7a2e1d; }
+      input, select, textarea { width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px; border: 1px solid #c9983a; background-color: #ffffff; font-family: Georgia, "Times New Roman", serif; font-size: 1em; color: #3b2a1a; }
+      textarea { height: 80px; }
+      button { margin-top: 20px; padding: 10px 25px; background-color: #7a2e1d; color: #f6ecd9; border: 2px solid #c9983a; font-family: Georgia, "Times New Roman", serif; font-size: 1em; cursor: pointer; }
+      button:hover { background-color: #3f4a2b; }
+      .note { margin-top: 15px; font-size: 0.9em; font-style: italic; }
+
+      footer { background-color: #7a2e1d; color: #f6ecd9; text-align: center; padding: 15px 10px; border-top: 4px solid #c9983a; font-size: 0.9em; }
+      footer p { margin: 3px 0; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p id="site-name"><a href="index.html">Little Lemon</a></p>
+      <p id="tagline">Middle Eastern food in the Main District</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="book.html" class="current">Book a Table</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Book a Table</h1>
+
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" min="11:00" max="22:00" required>
+
+        <label for="guests">Number of guests</label>
+        <select id="guests" name="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6+</option>
+        </select>
+
+        <label for="notes">Special requests</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Book now</button>
+        <p class="note">We are open daily from 11:00 to 22:00.</p>
+      </form>
+    </main>
+
+    <footer>
+      <p>123 Rome Road, Main District, Capital City</p>
+      <p>Open daily, 11:00–22:00 · (021) 555 0123</p>
+    </footer>
+  </body>
+</html>
